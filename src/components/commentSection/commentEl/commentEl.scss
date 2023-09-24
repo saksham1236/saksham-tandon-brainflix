@@ -1,0 +1,8 @@
+.commentEl {
+    display: flex;
+    &__header {
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

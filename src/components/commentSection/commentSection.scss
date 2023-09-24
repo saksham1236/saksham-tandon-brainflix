@@ -1,9 +1,11 @@
 .commentSection {
     display: flex;
-
-    &__addComment {
+    flex-direction: column;
+    row-gap: 1rem;
+    &__addComments {
+        column-gap: 1rem;
         display: inherit;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
     }
 }
