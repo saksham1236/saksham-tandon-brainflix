@@ -1,0 +1,20 @@
+@use './styles/_global' as*;
+@use './styles/_fonts' as*;
+@use './styles/_grids' as*;
+
+body {
+  font-family: var(--font-face), sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.063rem;
+}
+
+p {
+  line-height: 150%;
+}

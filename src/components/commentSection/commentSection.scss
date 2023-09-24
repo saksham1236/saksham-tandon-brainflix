@@ -1,0 +1,9 @@
+.commentSection {
+    display: flex;
+
+    &__addComment {
+        display: inherit;
+        flex-direction: column;
+        width: 100%;
+    }
+}

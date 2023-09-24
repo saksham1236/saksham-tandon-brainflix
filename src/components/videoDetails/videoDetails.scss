@@ -1,0 +1,35 @@
+.videoDetail {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   padding-bottom: 3rem;
+   &__header {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+   }
+   &__secondary {
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+      justify-content: space-between;
+      &__post , &__stats {
+         font-size: 0.875rem;
+         display: inherit;
+         flex-direction: row;
+         column-gap: 2rem;
+      }
+
+      &__stats {
+         &__views, &__likes {
+            display: inherit;
+            flex-direction: row;
+            column-gap: 1rem;
+            align-items: center;
+         }
+      }
+   }
+     &__subtitle {
+        font-size: 0.875rem;
+     }
+}

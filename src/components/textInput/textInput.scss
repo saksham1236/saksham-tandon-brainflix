@@ -1,0 +1,12 @@
+@use '../../styles/_abstracts' as*;
+
+.textInput {
+    display: flex;
+    &__inner {
+        line-height: 100%;
+        width: 100%;
+        padding: 0.5em 1rem;
+        border-radius: 0.25rem;
+        border: 0.1rem solid var(--Mercury);
+    }
+}

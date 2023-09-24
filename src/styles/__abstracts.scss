@@ -1,0 +1,33 @@
+:root {
+    //Primary Colors
+    --BrainFlix-Black: #323232;
+    --BrainFlix-Blue: #0095FF;
+    --Silver: #AFAFAF;
+    --White: #fff;
+
+    //Secondary Colors
+    --BrainFlix-DarkBlack: #000000;
+    --BrainFlix-DarkBlue: #0065AD;
+    --Mercury: #E1E1E1;
+    --Alabaster: #FAFAFA;
+
+    //Text Colors
+    --Text-Black: #000;
+    --Text-Grey: #444;
+    --Text-White: #fff;
+
+    //Font Face
+    --font-face: 'AvenirLTNextPro'
+}
+
+@mixin desktop {
+    @media(width >= 1280px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet{
+      @media(width >= 768px){
+          @content
+      }
+  }

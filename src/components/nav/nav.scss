@@ -1,0 +1,38 @@
+@use '../../styles/_abstracts' as*;
+
+.nav, nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__right {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+    }
+    &__search {
+        display: flex;
+        column-gap: 1rem;
+        padding: 0rem 1rem;
+        align-items: center;
+        border: 2px solid var(--Mercury);
+        border-radius: 0.25rem;
+        &__input{
+            border: none;
+            padding: 0.5rem 0;
+        }
+    }
+
+    &__user {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+
+        &__profile {
+            height: 2rem;
+            width: 2rem;
+            object-fit: cover;
+        }
+    }
+}
