@@ -4,9 +4,17 @@ import Button from "../button/button";
 import commentIcon from "../../assets/Icons/add_comment.svg";
 import CommentEl from './commentEl/commentEl';
 
+interface propsCommentSection {
+  id: string; 
+  name: string; 
+  comment: string; 
+  likes: number; 
+  timestamp: Date;
+}
+
 function CommentSection(props: any) {
-
-
+  console.log(props.commentList);
+  const { commentList } = props;
   return (
     <div className="commentSection">
       <h2 className="commentSection__title">Comments</h2>
@@ -24,12 +32,14 @@ function CommentSection(props: any) {
       </div>
 
       <div className='commentSection__list'>
-        <CommentEl
-           userName = "Hello"
-           commentText = "Ssup"
-           date = "11/1/11"
-           likes = "23234"
-        />
+        {commentList.map((el:any) => {
+          return(<CommentEl 
+            key = {el.id}
+            name = {el.name}
+            commentText = {el.comment}
+            date = "1232411324"
+            />)
+          })}
       </div>
     </div>
   );
