@@ -16,7 +16,6 @@ function videoDetails(props: videoId) {
   console.log(videoData);
 
   return (
-    <>
       <div className="videoDetail">
         <div className="videoDetail__header">
           <h1 className="videoDetail__title">{videoData?.title}</h1>
@@ -43,10 +42,8 @@ function videoDetails(props: videoId) {
         <div className="videoDetail__description">
           <p>{videoData?.description}</p>
         </div>
+        <CommentSection commentList={videoData?.comments} />
       </div>
-      
-      <CommentSection commentList={videoData?.comments} />
-    </>
   );
 }
 export default videoDetails;

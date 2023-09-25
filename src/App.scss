@@ -18,3 +18,10 @@ h1 {
 p {
   line-height: 150%;
 }
+
+.videoBodyPane  {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0;
+  padding-bottom: 0;
+}
