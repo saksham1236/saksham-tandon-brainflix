@@ -1,9 +1,9 @@
 /**
- * Converts Unix Timestamp to Date
- * @param date as number or string in Unix Format
- * @returns convertedDate
+ * Returns the number of seconds, minutes, days, years from the currentDate
+ * @param date 
+ * @returns time subtracted in 
  */
-function ConvertDatetoUS(date: any) {
+function convertDatetoPassedTime(date: any) {
   const second = 1000;
   const minute = 60*second;
   const hour =  60*minute;
@@ -11,9 +11,6 @@ function ConvertDatetoUS(date: any) {
   const year = 365*day;
     const currentTime = Date.now();
     const differenceInTime = currentTime - date;
-    const newDate = new Intl.DateTimeFormat("en-US").format(
-      new Date(Number(date))
-    );
     if(differenceInTime < second ) {
       return `Just Now`;
     } else if(differenceInTime < minute){
@@ -30,4 +27,4 @@ function ConvertDatetoUS(date: any) {
     
 }
 
-export default ConvertDatetoUS;
+export default convertDatetoPassedTime;

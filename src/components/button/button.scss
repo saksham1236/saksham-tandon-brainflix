@@ -1,6 +1,7 @@
 @use '../../styles/_abstracts' as*;
 
 button, .button {
+    font-weight: bold;
     display: flex;
     flex: 0 1 auto;
     font-size: 0.85rem;
@@ -11,16 +12,25 @@ button, .button {
     color: white;
     border-radius: 0.25rem;
     column-gap: 1rem;
-    width: 10rem;
+    justify-content: space-between;
+    width: 100%;
     letter-spacing: 0.02rem;
     transition: 0.3s all;
+    max-height: 2.5rem;
+    @include tablet {
+        width: 10rem;
+    }
     &__icon {
         flex: 0 1 auto;
         justify-self: flex-start;
         height: 1.5rem;
         width: 1.5rem;
     }
-
+    &__label {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: center;
+    }
     &:hover {
         background-color: var(--BrainFlix-DarkBlue);
     }

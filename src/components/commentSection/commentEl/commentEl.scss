@@ -1,3 +1,5 @@
+@use '../../../styles/_abstracts' as*;
+
 .commentEl {
     display: flex;
     flex-direction: row;
@@ -23,8 +25,11 @@
         width: 2rem;
         border-radius: 2rem;
         overflow: hidden;
-
+        flex: 1 0 auto;
+        background-color: var(--Silver);
         &__image {
+            height: 2rem;
+            width: 2rem;
             object-fit: cover;
         }
     }

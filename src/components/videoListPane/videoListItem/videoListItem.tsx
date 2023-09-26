@@ -1,5 +1,4 @@
 import "./videoListItem.scss";
-import { data } from '../../../../../../../../test-git/ts-web/data';
 
 function videoListItem(props: any) {
   const { id, imgSrc, title, channelName } = props;
