@@ -6,11 +6,7 @@ import Divider from "../divider/divider";
 import dateConvert from "../functions/dateConvert";
 import CommentSection from "../commentSection/commentSection";
 
-interface videoId {
-  videoId: string;
-}
-
-function videoDetails(props: videoId) {
+function videoDetails(props: any) {
   const { videoId } = props;
   const videoData = videoDetailsData.find((element) => element.id === videoId);
   console.log(videoData);

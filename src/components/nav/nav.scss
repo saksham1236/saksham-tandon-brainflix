@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     &__right {
         display: flex;
         column-gap: 1rem;

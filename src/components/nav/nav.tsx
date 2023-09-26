@@ -22,6 +22,7 @@ function SearchInput() {
 
 function Nav() {
     return (
+        <section className='nav__container'>
         <nav className='nav'>
             <div className = 'nav__logo'>
                 <img className='nav__logo__src' src = {logo} alt = "Brainflix Logo" />
@@ -34,10 +35,11 @@ function Nav() {
                 buttonLabel = "UPLOAD"
                 />
             <div className='nav__user'>
-                <img className='nav__user__profile' src = {userProfile} alt = "Your Profile"></img>
+                <img className='nav__user__profile' src = {userProfile} alt = "Your Profile" />
             </div>
             </div>
         </nav>
+        </section>
     )
 }
 

@@ -7,21 +7,24 @@
     &__inner {
         display: inherit;
         flex-direction: column;
-        
+        row-gap: 0.5rem;
     }
     &__header {
         display: inherit;
         flex-direction: row;
         justify-content: space-between;
+        font-size: 0.875rem;
     }
-    
+    &__userName {
+        font-size: 0.875rem;
+    }
     &__user {
         height: 2rem;
         width: 2rem;
         border-radius: 2rem;
         overflow: hidden;
 
-        &__image{
+        &__image {
             object-fit: cover;
         }
     }

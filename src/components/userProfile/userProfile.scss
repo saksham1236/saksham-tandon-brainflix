@@ -1,0 +1,11 @@
+.userProfile {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    &__image {
+        height: 2rem;
+        width: 2rem;
+        object-fit: cover;
+    }
+}

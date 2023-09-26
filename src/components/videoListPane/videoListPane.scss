@@ -2,13 +2,14 @@
 
 .videoListPane {
     padding-top: 3rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
     max-width: 25rem;
     display: flex;
     flex-direction: column;
     border-left: 2px solid var(--Mercury);
 
     &__title{
+        padding-left: 1rem;
         font-size: 0.875rem;
         color: var(--Silver);
     }

@@ -1,12 +1,29 @@
+@use '../../styles/_abstracts' as*;
+
 .commentSection {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     padding-right: 1.5rem;
+    padding-top: 3rem;
+    &__title {
+        font-size: 0.875rem;
+    }
+
     &__addComments {
+        align-items: flex-end;
         column-gap: 1rem;
         display: inherit;
         flex-direction: row;
         width: 100%;
+        &__inner {
+            display: inherit;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__title {
+            color: var(--Silver);
+            font-size: 0.875rem;
+        }
     }
 }

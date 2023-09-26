@@ -3,9 +3,18 @@
 .videoListItem {
     display: flex;
     flex-direction: row;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     column-gap: 1rem;
-
+    border-radius: 0.25rem;
+    overflow:hidden;
+    transition: all 0.3s ease;
+    &:hover {
+        transition: all 0.3s ease;
+        background-color: var(--Mercury);
+    }
+    &:active {
+        background-color: var(--BrainFlix-Blue);
+    }
     &__thumb {
         display: flex;
         background-color: var(--Mercury);
