@@ -4,8 +4,16 @@
     display: flex;
     background-color: var(--BrainFlix-DarkBlack);
     width: 100%;
-    height: 400px;
+    aspect-ratio: 16/9;
     justify-content: center;
+
+    &::backdrop {
+        aspect-ratio: 16/9;
+        object-fit: fill;
+    }
+    @include tablet{
+        height: 400px;
+    }
     &__pane {
         height: 100%;
     }

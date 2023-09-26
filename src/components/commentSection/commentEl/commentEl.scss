@@ -1,0 +1,37 @@
+@use '../../../styles/_abstracts' as*;
+
+.commentEl {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 1rem 0;
+    &__inner {
+        display: inherit;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+    &__header {
+        display: inherit;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.875rem;
+    }
+    &__userName {
+        font-size: 0.875rem;
+    }
+    &__user {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        flex: 1 0 auto;
+        background-color: var(--Silver);
+        &__image {
+            height: 2rem;
+            width: 2rem;
+            object-fit: cover;
+        }
+    }
+
+}

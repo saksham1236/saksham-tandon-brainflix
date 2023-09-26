@@ -1,23 +1,40 @@
+@use '../../styles/_abstracts' as*;
+
 .videoDetail {
    display: flex;
    flex-direction: column;
    row-gap: 1rem;
-   padding-bottom: 3rem;
+   padding: 3rem 0rem;
+   &__header, &__secondary, &__stats, &__subtitle {
+      @include tablet{
+         padding-right: 1.5rem;
+      }
+   }
    &__header {
       display: flex;
       flex-direction: column;
       row-gap: 1rem;
+      padding-right: 1rem;
    }
    &__secondary {
       display: flex;
       flex-direction: row;
       column-gap: 1rem;
-      justify-content: space-between;
+      flex: 1 1 auto;
+      @include tablet{
+         justify-content: space-between;
+      }
       &__post , &__stats {
          font-size: 0.875rem;
          display: inherit;
-         flex-direction: row;
-         column-gap: 2rem;
+         flex-direction: column;
+         row-gap: 1rem;
+         flex: 1 1 auto;
+         @include tablet{
+            flex-direction: row;
+            column-gap: 2rem;
+            flex: 0 1 auto;
+         }
       }
 
       &__stats {

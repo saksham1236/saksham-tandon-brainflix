@@ -1,14 +1,45 @@
 @use '../../styles/_abstracts' as*;
 
 .nav, nav {
-    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    row-gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    @include tablet {
+        padding: 1rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__row__mid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        column-gap: 1rem;
+        
+        @include tablet{
+            justify-content: flex-end;
+        }
+    }
+    &__container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     &__right {
         display: flex;
         column-gap: 1rem;
         align-items: center;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 1rem;
+        @include tablet {
+            justify-content: flex-end;
+            flex-direction: row;
+            column-gap: 1rem;
+        }
     }
     &__search {
         display: flex;
@@ -17,6 +48,11 @@
         align-items: center;
         border: 2px solid var(--Mercury);
         border-radius: 0.25rem;
+        flex: 1 1 auto;
+
+        @include tablet{
+            flex: 0 1 auto;
+        }
         &__input{
             border: none;
             padding: 0.5rem 0;
@@ -28,6 +64,15 @@
         width: 2rem;
         border-radius: 2rem;
         overflow: hidden;
+        &__desktop{
+            display: none;
+        }
+        @include tablet {
+            display: none;
+            &__desktop{
+                display: flex;
+            }
+        }
 
         &__profile {
             height: 2rem;

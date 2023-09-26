@@ -1,3 +1,4 @@
+@use './styles/_abstracts' as*;
 @use './styles/_global' as*;
 @use './styles/_fonts' as*;
 @use './styles/_grids' as*;
@@ -12,9 +13,28 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.063rem;
+  font-size: 1.5rem;
+
+  @include tablet{
+    font-size: 2.063rem;
+  }
 }
 
 p {
   line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+.videoBodyPane  {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include desktop{
+    flex-direction: row;
+  }
 }

@@ -1,0 +1,24 @@
+@use '../../styles/_abstracts' as*;
+
+.videoListPane {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+    @include desktop{
+        padding-left: 1rem;
+        border-left: 2px solid var(--Mercury);
+        padding-top: 3rem;
+        max-width: 25rem;
+    }
+
+    &__title{
+        font-size: 0.875rem;
+        color: var(--Silver);
+
+        @include desktop{
+            padding-left: 1rem;
+        }
+    }
+}
