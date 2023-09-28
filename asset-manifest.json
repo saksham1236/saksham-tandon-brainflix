@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/saksham-tandon-brainflix/static/css/main.01134345.css",
+    "main.js": "/saksham-tandon-brainflix/static/js/main.c09dadb4.js",
+    "static/js/787.28cb0dcd.chunk.js": "/saksham-tandon-brainflix/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Mohan-muruge.jpg": "/saksham-tandon-brainflix/static/media/Mohan-muruge.7f8e1b851a284bcfa377.jpg",
+    "static/media/AvenirNextLTPro.ttf": "/saksham-tandon-brainflix/static/media/AvenirNextLTPro.3f6c730b0f59f3838d71.ttf",
+    "static/media/AvenirNextLTProBold.ttf": "/saksham-tandon-brainflix/static/media/AvenirNextLTProBold.3c6bf152ce9d23ec3657.ttf",
+    "static/media/AvenirNextLTPro-Bold.otf": "/saksham-tandon-brainflix/static/media/AvenirNextLTPro-Bold.abfbc7167526a2d9f205.otf",
+    "static/media/AvenirNextLTPro-Regular.otf": "/saksham-tandon-brainflix/static/media/AvenirNextLTPro-Regular.75d8c490a81ae1a6be46.otf",
+    "static/media/BrainFlix-logo.svg": "/saksham-tandon-brainflix/static/media/BrainFlix-logo.484484f1999e4bc1dc7d59fcb0b52fc9.svg",
+    "index.html": "/saksham-tandon-brainflix/index.html",
+    "static/media/search.svg": "/saksham-tandon-brainflix/static/media/search.75390016eac0c84eb510d51692d0f834.svg",
+    "static/media/upload.svg": "/saksham-tandon-brainflix/static/media/upload.5883ade39f5afef46caee6a664643bad.svg",
+    "static/media/views.svg": "/saksham-tandon-brainflix/static/media/views.42f1545a221f4e2e0df5d5de7a06e1b8.svg",
+    "static/media/likes.svg": "/saksham-tandon-brainflix/static/media/likes.2f50e10383e9755ca0b1c5ecdba9e127.svg",
+    "static/media/add_comment.svg": "/saksham-tandon-brainflix/static/media/add_comment.26bc7a200a77fd1eb3c8aec190e24f1e.svg",
+    "main.01134345.css.map": "/saksham-tandon-brainflix/static/css/main.01134345.css.map",
+    "main.c09dadb4.js.map": "/saksham-tandon-brainflix/static/js/main.c09dadb4.js.map",
+    "787.28cb0dcd.chunk.js.map": "/saksham-tandon-brainflix/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01134345.css",
+    "static/js/main.c09dadb4.js"
+  ]
+}
