@@ -4,8 +4,9 @@
    display: flex;
    flex-direction: column;
    row-gap: 1rem;
+   flex: 2 auto;
    padding: 3rem 0rem;
-   &__header, &__secondary, &__stats, &__subtitle {
+   &__header, &__secondary, &__stats, &__subtitle, &__description {
       @include tablet{
          padding-right: 1.5rem;
       }

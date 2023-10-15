@@ -6,8 +6,8 @@ import CommentEl from "./commentEl/commentEl";
 import UserProfile from "../userProfile/userProfile";
 
 function CommentSection(props: any) {
-  console.log(props.commentList);
-  const { commentList } = props;
+  const { videoData } = props;
+  const commentList = videoData.comments;
   return (
     <div className="commentSection">
       <h2 className="commentSection__title">{commentList.length} Comments</h2>
@@ -42,7 +42,7 @@ function CommentSection(props: any) {
               key={el.id}
               name={el.name}
               commentText={el.comment}
-              date="1232411324"
+              date={el.timestamp}
             />
           );
         })}

@@ -1,7 +1,7 @@
 /**
  * Returns the number of seconds, minutes, days, years from the currentDate
  * @param date 
- * @returns time subtracted in 
+ * @returns time subtracted from current time
  */
 function convertDatetoPassedTime(date: any) {
   const second = 1000;

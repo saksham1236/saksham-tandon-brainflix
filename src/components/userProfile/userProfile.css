@@ -1,0 +1,12 @@
+.userProfile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userProfile__image {
+  height: 2rem;
+  width: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=userProfile.css.map */

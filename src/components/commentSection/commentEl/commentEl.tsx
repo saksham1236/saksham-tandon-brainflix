@@ -6,7 +6,7 @@ interface commentData {
   key: string;
   name: string;
   commentText: string;
-  date: string;
+  date: string | number;
 }
 
 function CommentEl(props: commentData) {
