@@ -11,7 +11,7 @@ function UploadPage() {
   function uploadHandler(event: any) {
     event.preventDefault();
     alert("Your Video has been published successfully");
-    navigate("/");
+    navigate("/saksham-tandon-brainflix");
   }
   return (
     <section className="upload">
