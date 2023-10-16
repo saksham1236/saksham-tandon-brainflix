@@ -7,7 +7,7 @@
    flex: 2 auto;
    padding: 3rem 0rem;
    &__header, &__secondary, &__stats, &__subtitle, &__description {
-      @include tablet{
+      @include desktop{
          padding-right: 1.5rem;
       }
    }

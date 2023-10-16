@@ -44,3 +44,8 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  .subtitle {
+    font-size: 0.875rem;
+    color: var(--Silver);
+  }

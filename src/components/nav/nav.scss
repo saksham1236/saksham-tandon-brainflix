@@ -9,7 +9,7 @@
     padding-bottom: 1rem;
     width: 100%;
     @include tablet {
-        padding: 1rem 2rem;
+        padding: 1rem 0rem;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -27,6 +27,7 @@
     &__container{
         padding-top: 0;
         padding-bottom: 0;
+        border-bottom: 1.5px solid var(--Mercury);
     }
     &__right {
         display: flex;

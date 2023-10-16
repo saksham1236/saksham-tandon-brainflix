@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import "./App.scss";
-import Nav from "./components/nav/nav";
 import { useState } from "react";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
-import Main from "./pages/mainPage/main-body";
+
 import axios from "axios";
 import fetchUrl from "./components/routes/fetchUrl";
 import apiKey from "./components/keys/apiKey";
+
+import Nav from "./components/nav/nav";
+import Main from "./pages/mainPage/main-body";
+import UploadPage from "./pages/uploadPage/uploadPage";
 
 function App() {
   let fetchedList:any = [];
@@ -38,7 +41,8 @@ function App() {
           <Routes>
             <Route path = "/" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
             <Route path = "*" element ={<section><h2>Page Not Found</h2></section>}/>
-            <Route path="/video/:videoId" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
+            <Route path = "/video/:videoId" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
+            <Route path = "/upload" element={<UploadPage />}/>
           </Routes>
         </BrowserRouter>
       </div>
