@@ -7,10 +7,8 @@ import dateConvert from "../functions/dateConvert";
 import CommentSection from "../commentSection/commentSection";
 
 function videoDetails(props: any) {
-  const { videoId } = props;
-  const videoData = videoDetailsData.find((element) => element.id === videoId);
-  console.log(videoData);
-
+  const { videoData } = props;
+  console.log("Comments", videoData);
   return (
       <div className="videoDetail">
         <div className="videoDetail__header">
@@ -38,7 +36,7 @@ function videoDetails(props: any) {
         <div className="videoDetail__description">
           <p>{videoData?.description}</p>
         </div>
-        <CommentSection commentList={videoData?.comments} />
+        <CommentSection videoData = {videoData}/>
       </div>
   );
 }

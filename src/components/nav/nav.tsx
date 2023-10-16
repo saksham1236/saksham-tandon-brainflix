@@ -1,10 +1,11 @@
 import "./nav.scss";
 import logo from "../../assets/Logo/BrainFlix-logo.svg";
-import userProfile from "../../assets/Images/Mohan-muruge.jpg";
 import searchIcon from "../../assets/Icons/search.svg";
 import Button from "../button/button";
 import buttonIcon from "../../assets/Icons/upload.svg";
 import UserProfile from "../userProfile/userProfile";
+import { Link } from "react-router-dom";
+
 function SearchInput() {
   return (
     <div className="nav__search">
@@ -24,9 +25,12 @@ function Nav() {
   return (
     <section className="nav__container">
       <nav className="nav">
-        <div className="nav__logo">
-          <img className="nav__logo__src" src={logo} alt="Brainflix Logo" />
-        </div>
+        <a href = "/">
+          <div className="nav__logo">
+            <img className="nav__logo__src" src={logo} alt="Brainflix Logo" />
+          </div>
+        </a>
+
         <div className="nav__right">
           <div className="nav__row__mid">
             <SearchInput />
@@ -34,12 +38,14 @@ function Nav() {
               <UserProfile />
             </div>
           </div>
-
+          <a href = "/upload">
           <Button
             iconSrc={buttonIcon}
             iconAlt="Upload Icon"
             buttonLabel="UPLOAD"
           />
+          </a>
+
           <div className="nav__user__desktop">
             <UserProfile />
           </div>

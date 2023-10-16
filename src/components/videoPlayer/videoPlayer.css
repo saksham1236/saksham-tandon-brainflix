@@ -1,0 +1,40 @@
+:root {
+  --BrainFlix-Black: #323232;
+  --BrainFlix-Blue: #0095FF;
+  --Silver: #AFAFAF;
+  --White: #fff;
+  --BrainFlix-DarkBlack: #000000;
+  --BrainFlix-DarkBlue: #0065AD;
+  --Mercury: #E1E1E1;
+  --Alabaster: #FAFAFA;
+  --Text-Black: #000;
+  --Text-Grey: #444;
+  --Text-White: #fff;
+  --font-face: "AvenirLTNextPro" ;
+}
+
+.videoPlayer {
+  display: flex;
+  background-color: var(--BrainFlix-DarkBlack);
+  width: 100%;
+  aspect-ratio: 16/9;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.videoPlayer::backdrop {
+  aspect-ratio: 16/9;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+@media (width >= 768px) {
+  .videoPlayer {
+    height: 400px;
+  }
+}
+.videoPlayer__pane {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}/*# sourceMappingURL=videoPlayer.css.map */

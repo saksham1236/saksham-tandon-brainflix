@@ -1,3 +1,3 @@
 #BrainFlix Sprint 1 🧠
-Please forgive me for not appropriately using states.
+Merged sprint 2 into master for evalution, needed to use a instead of react router links for nav because of some error.
 Deployed at https://saksham1236.github.io/saksham-tandon-brainflix/

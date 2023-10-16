@@ -21,11 +21,13 @@
         font-size: 0.875rem;
     }
     &__user {
+        display: flex;
         height: 2rem;
+        min-height: 2rem;
         width: 2rem;
+        min-width: 2rem;
         border-radius: 2rem;
         overflow: hidden;
-        flex: 1 0 auto;
         background-color: var(--Silver);
         &__image {
             height: 2rem;
