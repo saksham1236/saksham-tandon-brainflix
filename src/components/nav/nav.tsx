@@ -25,7 +25,7 @@ function Nav() {
   return (
     <section className="nav__container">
       <nav className="nav">
-        <a href = "/">
+        <a href = "/saksham-tandon-brainflix">
           <div className="nav__logo">
             <img className="nav__logo__src" src={logo} alt="Brainflix Logo" />
           </div>
@@ -38,7 +38,7 @@ function Nav() {
               <UserProfile />
             </div>
           </div>
-          <a href = "/upload">
+          <a href = "/saksham-tandon-brainflix/upload">
           <Button
             iconSrc={buttonIcon}
             iconAlt="Upload Icon"

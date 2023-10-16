@@ -39,10 +39,10 @@ function App() {
         <Nav />
         <BrowserRouter>
           <Routes>
-            <Route path = "/" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
+            <Route path = "/saksham-tandon-brainflix" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
             <Route path = "*" element ={<section><h2>Page Not Found</h2></section>}/>
-            <Route path = "/video/:videoId" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
-            <Route path = "/upload" element={<UploadPage />}/>
+            <Route path = "/saksham-tandon-brainflix/video/:videoId" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
+            <Route path = "/saksham-tandon-brainflix/upload" element={<UploadPage />}/>
           </Routes>
         </BrowserRouter>
       </div>

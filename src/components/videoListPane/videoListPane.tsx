@@ -13,7 +13,7 @@ function VideoListPane(props: any) {
       <h2 className="videoListPane__title">NEXT VIDEO</h2>
       {filteredVideoList.map((e:any) => {
           return (
-            <Link to = {`/video/${e.id}`} onClick={() => {setId(e.id); window.scrollTo(0, 0);}}>
+            <Link to = {`/saksham-tandon-brainflix/video/${e.id}`} onClick={() => {setId(e.id); window.scrollTo(0, 0);}}>
               <VideoListItem
                 key={e.id}
                 imgSrc={e.image}
