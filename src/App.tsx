@@ -36,8 +36,8 @@ function App() {
   } else {
     return (
       <div className="App">
-        <Nav />
         <BrowserRouter>
+          <Nav />
           <Routes>
             <Route path = "/saksham-tandon-brainflix" element={<Main id={id} setId = {setId} videoList = {videoList}/>}/>
             <Route path = "*" element ={<section><h2>Page Not Found</h2></section>}/>
