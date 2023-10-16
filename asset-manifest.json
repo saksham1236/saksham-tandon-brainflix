@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/saksham-tandon-brainflix/static/css/main.171573ec.css",
-    "main.js": "/saksham-tandon-brainflix/static/js/main.b50e46e4.js",
+    "main.js": "/saksham-tandon-brainflix/static/js/main.19522f17.js",
     "static/js/787.28cb0dcd.chunk.js": "/saksham-tandon-brainflix/static/js/787.28cb0dcd.chunk.js",
     "static/media/Upload-video-preview.jpg": "/saksham-tandon-brainflix/static/media/Upload-video-preview.313a407cf90c0668da07.jpg",
     "static/media/Mohan-muruge.jpg": "/saksham-tandon-brainflix/static/media/Mohan-muruge.7f8e1b851a284bcfa377.jpg",
@@ -18,11 +18,11 @@
     "static/media/likes.svg": "/saksham-tandon-brainflix/static/media/likes.2f50e10383e9755ca0b1c5ecdba9e127.svg",
     "static/media/add_comment.svg": "/saksham-tandon-brainflix/static/media/add_comment.26bc7a200a77fd1eb3c8aec190e24f1e.svg",
     "main.171573ec.css.map": "/saksham-tandon-brainflix/static/css/main.171573ec.css.map",
-    "main.b50e46e4.js.map": "/saksham-tandon-brainflix/static/js/main.b50e46e4.js.map",
+    "main.19522f17.js.map": "/saksham-tandon-brainflix/static/js/main.19522f17.js.map",
     "787.28cb0dcd.chunk.js.map": "/saksham-tandon-brainflix/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.171573ec.css",
-    "static/js/main.b50e46e4.js"
+    "static/js/main.19522f17.js"
   ]
 }
