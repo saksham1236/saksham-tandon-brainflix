@@ -1,17 +1,19 @@
-import React, { useEffect } from "react";
+//Importing CSS
 import "./App.scss";
-import { useState } from "react";
+//Imports
+import React, { useEffect, useState } from "react";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
+import axios, { AxiosError, AxiosResponse } from "axios";
 
-import axios from "axios";
-import fetchUrl from "./components/routes/fetchUrl";
+//Importing Components
+import fetchUrl, {fetchUrlLocal} from "./components/routes/fetchUrl";
 import apiKey from "./components/keys/apiKey";
-
 import Nav from "./components/nav/nav";
 import Main from "./pages/mainPage/main-body";
 import UploadPage from "./pages/uploadPage/uploadPage";
 
 function App() {
+  const port = process.env.PORT || 8080
   let fetchedList:any = [];
   const [videoList, setVideoList]:any = useState([]);
   const { videoId } = useParams()
@@ -19,14 +21,14 @@ function App() {
   const [videoData, setVideoData] = useState();
 
   useEffect(() => {
-    let fetchedList:any = [];
-    axios.get(`${fetchUrl}/videos?api_key=${apiKey}`)
-    .then((res:any) => {
+    // axios.get(`${fetchUrl}/videos?api_key=${apiKey}`)
+    axios.get(`${fetchUrlLocal}/videos`)
+    .then((res:AxiosResponse) => {
         fetchedList = [...res.data];
         console.log("from function", fetchedList);
         setVideoList(fetchedList);
         setId(fetchedList[0].id);
-    }).catch((error:object) => {
+    }).catch((error:AxiosError) => {
         console.log(error);
     });
   },[]);
