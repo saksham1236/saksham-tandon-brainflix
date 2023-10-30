@@ -3,12 +3,13 @@ import TextInput from "../../components/textInput/textInput";
 import Button from "../../components/button/button";
 import publishIcon from "../../assets/Icons/publish.svg";
 import "./uploadPage.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { fetchUrlLocal } from "../../components/routes/fetchUrl";
 import { useState } from "react";
 
 function UploadPage() {
+
   const[imagePreview, setImagePreview] = useState(`${fetchUrlLocal}/images/image0.jpeg`);
   const navigate = useNavigate();
 
@@ -17,13 +18,14 @@ function UploadPage() {
     event.preventDefault();
     console.log(event.target.uploadVideoTitle.value);
     const videoTitle = event.target.uploadVideoTitle.value;
-    const videoDescription = event.target.uploadVideoDescription;
+    const videoDescription = event.target.uploadVideoDescription.value;
     const imageUrl = imagePreview;
-
+    console.log(imageUrl);
+    
     const newVideoData = {
-      title: videoTitle,
-      description: videoDescription,
-      image: imageUrl
+      "title": videoTitle,
+      "description": videoDescription,
+      "imageUrl": imageUrl
     }
 
     axios.post(`${fetchUrlLocal}/videos/upload`, newVideoData)
