@@ -21,7 +21,6 @@ function App() {
   const [videoData, setVideoData] = useState();
 
   useEffect(() => {
-    // axios.get(`${fetchUrl}/videos?api_key=${apiKey}`)
     axios.get(`${fetchUrlLocal}/videos`)
     .then((res:AxiosResponse) => {
         fetchedList = [...res.data];

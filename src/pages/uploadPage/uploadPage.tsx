@@ -21,7 +21,12 @@ function UploadPage() {
     const videoDescription = event.target.uploadVideoDescription.value;
     const imageUrl = imagePreview;
     console.log(imageUrl);
-    
+
+    // if(videoTitle || videoDescription) {
+    //   alert("Please input all form fields");
+    //   return
+    // }
+
     const newVideoData = {
       "title": videoTitle,
       "description": videoDescription,
@@ -33,6 +38,7 @@ function UploadPage() {
       if(response.status === 201) {
         alert("Video Uploaded Succesfully")
         navigate("/saksham-tandon-brainflix");
+        window.location.reload();
       }
     }).catch((error:AxiosError) => {
       console.log(error);
