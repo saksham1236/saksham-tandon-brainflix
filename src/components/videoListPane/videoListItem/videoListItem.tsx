@@ -1,7 +1,14 @@
 import "./videoListItem.scss";
+import {fetchUrlLocal} from "../../routes/fetchUrl";
+
 
 function videoListItem(props: any) {
-  const { id, imgSrc, title, channelName } = props;
+  const port = process.env.PORT || 8080
+  let { id, imgSrc, title, channelName } = props;
+  if(!(imgSrc.includes("http")) || !(imgSrc.includes("https"))) {
+    imgSrc = `${fetchUrlLocal}/${imgSrc}`;
+    console.log(imgSrc);
+  }
   return (
     <>
     <div className="videoListItem" custom-data = {id}>

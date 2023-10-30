@@ -1,19 +1,24 @@
+//Dependencies
+import { useEffect, useState } from "react";
+import axios from "axios";
+//Components
 import VideoPlayer from "../../components/videoPlayer/videoPlayer";
 import VideoDetails from "../../components/videoDetails/videoDetails";
 import VideoListPane from "../../components/videoListPane/videoListPane";
 import videoMetadata from "../../assets/Data/video-details.json"
-import { useEffect, useState } from "react";
-import axios from "axios";
-import fetchUrl from '../../components/routes/fetchUrl';
+//Routes and Variables
+import fetchUrl, {fetchUrlLocal} from '../../components/routes/fetchUrl';
 import apiKey from "../../components/keys/apiKey";
 
 
 function Main(props:any) {
+  const port = process.env.PORT || 8080;
   const {id , setId, videoList} = props;
   const [videoData, setVideoData] = useState();
 
   useEffect(() => {
-    axios.get(`${fetchUrl}/videos/${id}?api_key=${apiKey}`)
+    // axios.get(`${fetchUrl}/videos/${id}?api_key=${apiKey}`)
+    axios.get(`${fetchUrlLocal}/videos/${id}`)
     .then((res:any) => {
       setVideoData(res.data);
         console.log("videoData", res.data);
